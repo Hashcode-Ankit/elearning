@@ -13,13 +13,13 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Senior UX Designer',
-        name: 'Shoo Thar Mien',
+        profession: 'Senior Software Engineer',
+        name: 'Kanish',
         imgSrc: '/assets/mentor/user3.png',
     },
     {
-        profession: 'Senior UX Designer',
-        name: 'Shoo Thar Mien',
+        profession: 'Software Engineer',
+        name: 'Ankit',
         imgSrc: '/assets/mentor/user2.png',
     },
     {
@@ -81,10 +81,10 @@ export default class MultipleItems extends Component {
             slidesToScroll: 1,
             arrows: false,
             autoplay: false,
-            speed: 4000,
+            speed: 1000,
             nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
             prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
-            autoplaySpeed: 4500,
+            autoplaySpeed: 1000,
             cssEase: "linear",
             responsive: [
                 {
