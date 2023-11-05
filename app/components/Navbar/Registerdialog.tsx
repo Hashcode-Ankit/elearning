@@ -57,7 +57,7 @@ const Register = () => {
                                                 <img
                                                     className="mx-auto h-12 w-auto"
                                                     src="/assets/logo/logo.png"
-                                                    alt="Your Company"
+                                                    alt="Saral Group"
                                                 />
                                                 <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
                                                     Register your account
