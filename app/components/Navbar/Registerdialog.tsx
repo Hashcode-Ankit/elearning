@@ -83,13 +83,12 @@ const Register = () => {
                                                     </div>
                                                     <div>
                                                         <label htmlFor="password" className="sr-only">
-                                                            Password
+                                                            Mobile Number
                                                         </label>
                                                         <input
-                                                            id="password"
-                                                            name="password"
-                                                            type="password"
-                                                            autoComplete="current-password"
+                                                            id="mobile"
+                                                            name="mobile"
+                                                            type="number"
                                                             required
                                                             className="relative block w-full appearance-none rounded-none rounded-b-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                                                             placeholder="Password"
@@ -120,7 +119,7 @@ const Register = () => {
                                                         <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                                             <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
                                                         </span>
-                                                        Register Now
+                                                        Request Callback
                                                     </button>
                                                 </div>
                                             </form>

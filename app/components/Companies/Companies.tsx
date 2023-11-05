@@ -26,12 +26,6 @@ const data: Data[] = [
     },
     {
         imgSrc: "/assets/carousel/walmart.svg"
-    },
-    {
-        imgSrc: "/assets/carousel/airbnb.svg"
-    },
-    {
-        imgSrc: "/assets/carousel/fedex.svg"
     }
 ]
 
