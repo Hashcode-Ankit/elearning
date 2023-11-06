@@ -70,10 +70,10 @@ const postData: DataType[] = [
         rating: 4.1,
     },
     {
-        heading: 'Personality Development',
-        heading2: '',
+        heading: 'Personality ',
+        heading2: 'Development',
         name: "",
-        imgSrc: '/assets/courses/pd.jpeg',
+        imgSrc: '/assets/courses/pd.png',
         students: 150,
         classes: 11,
         price: 11999,

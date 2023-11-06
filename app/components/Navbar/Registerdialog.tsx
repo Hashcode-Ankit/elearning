@@ -14,12 +14,49 @@ const Register = () => {
         setIsOpen(true)
     }
 
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        mobile: '',
+    });
+
+    // const handleFormSubmit = async (e) => {
+    //     e.preventDefault();
+
+    //     // Prepare the message to send to Slack
+    //     const message = `New Callback Request:\nName: ${formData.name}\nEmail: ${formData.email}\nMobile: ${formData.mobile}`;
+
+    //     try {
+    //         // Replace 'YOUR_SLACK_WEBHOOK_URL' with your actual Slack webhook URL
+    //         const slackWebhookUrl = 'YOUR_SLACK_WEBHOOK_URL';
+
+    //         await fetch(slackWebhookUrl, {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({ text: message }),
+    //         });
+
+    //         // Close the modal or perform any other desired action after success
+    //         closeModal();
+    //     } catch (error) {
+    //         console.error('Error sending message to Slack:', error);
+    //         // Handle the error, e.g., show an error message to the user
+    //     }
+    // }
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    }
+
     return (
         <>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
                 <div className='hidden lg:block'>
                     <button className="text-Blueviolet text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out rounded-full bg-semiblueviolet hover:text-white hover:bg-Blueviolet" onClick={openModal}>
-                        Sign up
+                     Request Callback 
                     </button>
                 </div>
             </div>
@@ -63,14 +100,28 @@ const Register = () => {
                                                     alt="Saral Group"
                                                 />
                                                 <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                                                    Register your account
+                                                    Take your first step 
                                                 </h2>
                                             </div>
                                             <form className="mt-8 space-y-6" action="#" method="POST">
                                                 <input type="hidden" name="remember" defaultValue="true" />
                                                 <div className="-space-y-px rounded-md shadow-sm">
                                                     <div>
-                                                        <label htmlFor="email-address" className="sr-only">
+                                                        <label htmlFor="email-address" >
+                                                            Name
+                                                        </label>
+                                                        <input
+                                                            id="name"
+                                                            name="name"
+                                                            type="text"
+                                                            autoComplete="name"
+                                                            required
+                                                            className="relative block w-full appearance-none rounded-none rounded-t-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                                            placeholder="Full Name"
+                                                        />
+                                                    </div>
+                                                    <div>
+                                                        <label htmlFor="email-address" >
                                                             Email address
                                                         </label>
                                                         <input
@@ -84,7 +135,7 @@ const Register = () => {
                                                         />
                                                     </div>
                                                     <div>
-                                                        <label htmlFor="password" className="sr-only">
+                                                        <label htmlFor="mobile-number">
                                                             Mobile Number
                                                         </label>
                                                         <input
@@ -93,7 +144,7 @@ const Register = () => {
                                                             type="number"
                                                             required
                                                             className="relative block w-full appearance-none rounded-none rounded-b-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                            placeholder="Password"
+                                                            placeholder="+91-8685019365"
                                                         />
                                                     </div>
                                                 </div>
@@ -107,7 +158,7 @@ const Register = () => {
                                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                         />
                                                         <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                                                            Remember me
+                                                            Accept Terms & Conditions
                                                         </label>
                                                     </div>
 
