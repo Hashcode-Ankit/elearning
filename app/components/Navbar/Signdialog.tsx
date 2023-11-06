@@ -56,6 +56,8 @@ const Signin = () => {
                                             <div>
                                                 <img
                                                     className="mx-auto h-12 w-auto"
+                                                    width={100}
+                                                    height={100}
                                                     style={{ width: '45%', height: '100%' }}
                                                     src="/assets/logo/logo.png"
                                                     alt="Saral Group"
