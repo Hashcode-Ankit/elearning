@@ -33,7 +33,7 @@ const Register = (props) => {
 
   const sendToSlack = () => {
     // You should replace this URL with your Slack API endpoint.
-    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
+    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
 
     // Compose the message payload
     const messagePayload = {
@@ -41,10 +41,7 @@ const Register = (props) => {
     };
 
 
-    axios.post(slackWebhookUrl, JSON.stringify(messagePayload),{
-        withCredentials: false,
-        transformRequest: [(messagePayload) => {return messagePayload}],
-      }).then(response => {
+    axios.post(slackWebhookUrl, JSON.stringify(messagePayload)).then(response => {
           console.log("Message sent to Slack:", response.data);
           closeModal()
         })
