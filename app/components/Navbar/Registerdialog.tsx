@@ -18,6 +18,7 @@ const Register = () => {
         name: "",
         email: "",
         mobile: "",
+        referral:"",
   });
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
@@ -152,7 +153,19 @@ const Register = () => {
                             />
                           </div>
                         </div>
-
+                        <div>
+                            <label htmlFor="name">Referral</label>
+                            <input
+                              id="referral"
+                              name="refrral"
+                              type="text"
+                              autoComplete="refrral"
+                              value={formData.referral}
+                              onChange={handleChange}
+                              className="relative block w-full appearance-none rounded-none rounded-t-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                              placeholder="Refrral Code"
+                            />
+                          </div>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <input

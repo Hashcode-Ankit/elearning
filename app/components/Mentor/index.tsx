@@ -13,19 +13,19 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Senior Software Engineer',
+        profession: 'Founder Saral Tech, Senior Software Engineer',
         name: 'Kanish',
-        imgSrc: '/assets/mentor/user3.png',
+        imgSrc: '/assets/mentor/kanishCircular.png',
     },
     {
-        profession: 'Software Engineer',
+        profession: 'Founder FreelanceHourly, Software Engineer',
         name: 'Ankit',
-        imgSrc: '/assets/mentor/user3.png',
+        imgSrc: '/assets/mentor/ankit.png',
     },
     {
-        profession: 'Data Engineer',
+        profession: 'Founder Jamrio, Data Engineer',
         name: 'Adhiraj',
-        imgSrc: '/assets/mentor/user2.png',
+        imgSrc: '/assets/mentor/jamiloBG.png',
     },
 ]
 
@@ -114,12 +114,12 @@ export default class MultipleItems extends Component {
                             <div key={i}>
                                 <div className='m-3 py-14 md:my-10 text-center'>
                                     <div className="relative">
-                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto" />
+                                        <Image src={items.imgSrc} alt="user-image" width={200} height={0} className="inline-block m-auto" />
                                         <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">
                                             <Image src={'/assets/mentor/linkedin.svg'} alt="linkedin-image" width={25} height={24} />
                                         </div>
                                     </div>
-                                    <div className="-mt-10">
+                                    <div className="mt-10">
                                         <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
                                         <h4 className='text-lg font-normal text-lightblack pt-2 opacity-50'>{items.profession}</h4>
                                     </div>
