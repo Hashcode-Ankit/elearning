@@ -5,7 +5,11 @@ import { Fragment, useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import axios from "axios";
 
-const Register = (props) => {
+type MyComponentProps = {
+  buttonText: string;
+};
+
+const Register: React.FC<MyComponentProps> = (props) => {
   let [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
