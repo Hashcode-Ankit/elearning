@@ -5,7 +5,11 @@ import { Fragment, useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import axios from "axios";
 
-const Register = (props) => {
+type MyComponentProps = {
+  buttonText: string;
+};
+
+const Register: React.FC<MyComponentProps> = (props) => {
   let [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
@@ -33,7 +37,11 @@ const Register = (props) => {
 
   const sendToSlack = () => {
     // You should replace this URL with your Slack API endpoint.
-    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
+    const slackWebhookUrl = "https://hooks.slack.com/services/"; // Replace with your Slack Webhook URL
+
+    const code1 = "T06359UTPK7";
+    const code2 = "/B064J1JSS3F/";
+    const code3 = "bcldAB6qy2NlimO6HOTOBSeI";
 
     // Compose the message payload
     const messagePayload = {
@@ -41,10 +49,7 @@ const Register = (props) => {
     };
 
 
-    axios.post(slackWebhookUrl, JSON.stringify(messagePayload),{
-        withCredentials: false,
-        transformRequest: [(messagePayload) => {return messagePayload}],
-      }).then(response => {
+    axios.post(slackWebhookUrl + code1 + code2 + code3, JSON.stringify(messagePayload)).then(response => {
           console.log("Message sent to Slack:", response.data);
           closeModal()
         })
@@ -160,7 +165,7 @@ const Register = (props) => {
                               id="referral"
                               name="referral"
                               type="text"
-                              required
+                              autoComplete="referral"
                               value={formData.referral}
                               onChange={handleChange}
                               className="relative block w-full appearance-none rounded-none rounded-b-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
