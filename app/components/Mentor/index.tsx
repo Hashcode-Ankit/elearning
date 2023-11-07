@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // CAROUSEL DATA
 
@@ -9,6 +10,7 @@ interface DataType {
     profession: string;
     name: string;
     imgSrc: string;
+    linkedin: string;
 }
 
 const postData: DataType[] = [
@@ -16,16 +18,19 @@ const postData: DataType[] = [
         profession: 'Founder Saral Tech | DevOps & NLP Expert',
         name: 'Kanish',
         imgSrc: '/assets/mentor/kanishCircular.png',
+        linkedin: 'https://www.linkedin.com/in/k4ni5h/',
     },
     {
         profession: 'Founder FreelanceHourly | Software Expert',
         name: 'Ankit',
         imgSrc: '/assets/mentor/ankit.png',
+        linkedin: 'https://www.linkedin.com/in/hashcode-ankit/',
     },
     {
         profession: 'Founder Jamrio | Marketing Expert',
         name: 'Adhiraj',
         imgSrc: '/assets/mentor/jamiloBG.png',
+        linkedin: 'https://www.linkedin.com/in/aayxkay/',
     },
 ]
 
@@ -114,10 +119,12 @@ export default class MultipleItems extends Component {
                             <div key={i}>
                                 <div className='m-3 py-14 md:my-10 text-center'>
                                     <div className="relative">
+                                            <Link href={items.linkedin} target="_blank">
                                         <Image src={items.imgSrc} alt="user-image" width={200} height={0} className="inline-block m-auto" />
                                         <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">
-                                            <Image src={'/assets/mentor/linkedin.svg'} alt="linkedin-image" width={25} height={24} />
+                                                <Image src={'/assets/mentor/linkedin.svg'} alt="linkedin-image" width={25} height={24} />
                                         </div>
+                                            </Link>
                                     </div>
                                     <div className="mt-10">
                                         <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
