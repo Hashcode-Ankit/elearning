@@ -33,7 +33,7 @@ const Register = (props) => {
 
   const sendToSlack = () => {
     // You should replace this URL with your Slack API endpoint.
-    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
+    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
 
     // Compose the message payload
     const messagePayload = {
