@@ -10,7 +10,7 @@ type MyComponentProps = {
 };
 
 const Register: React.FC<MyComponentProps> = (props) => {
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(true);
 
   const closeModal = () => {
     setIsOpen(false);
