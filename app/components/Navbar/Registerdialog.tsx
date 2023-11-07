@@ -33,7 +33,7 @@ const Register = (props) => {
 
   const sendToSlack = () => {
     // You should replace this URL with your Slack API endpoint.
-    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
+    const slackWebhookUrl = "https://hooks.slack.com/services/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"; // Replace with your Slack Webhook URL
 
     // Compose the message payload
     const messagePayload = {
@@ -146,7 +146,7 @@ const Register = (props) => {
                             <input
                               id="mobile"
                               name="mobile"
-                              type="number"
+                              type="text"
                               required
                               value={formData.mobile}
                               onChange={handleChange}
@@ -159,9 +159,9 @@ const Register = (props) => {
                             <label htmlFor="name">Referral</label>
                             <input
                               id="referral"
-                              name="refrral"
+                              name="referral"
                               type="text"
-                              autoComplete="refrral"
+                              autoComplete="referral"
                               value={formData.referral}
                               onChange={handleChange}
                               className="relative block w-full appearance-none rounded-none rounded-t-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
