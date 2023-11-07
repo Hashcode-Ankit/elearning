@@ -102,7 +102,7 @@ const Register = () => {
                           alt="Saral Group"
                         />
                         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                          Take your first step
+                            Redeem your first free career counselling
                         </h2>
                       </div>
                         <input
@@ -144,7 +144,7 @@ const Register = () => {
                             <input
                               id="mobile"
                               name="mobile"
-                              type="number"
+                              type="text"
                               required
                               value={formData.mobile}
                               onChange={handleChange}
@@ -152,25 +152,26 @@ const Register = () => {
                               placeholder="+91-8685019365"
                             />
                           </div>
-                        </div>
-                        <div>
-                            <label htmlFor="name">Referral</label>
+                          <div>
+                            <label htmlFor="referral">Referral Code</label>
                             <input
                               id="referral"
-                              name="refrral"
+                              name="referral"
                               type="text"
-                              autoComplete="refrral"
+                              required
                               value={formData.referral}
                               onChange={handleChange}
-                              className="relative block w-full appearance-none rounded-none rounded-t-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                              placeholder="Refrral Code"
+                              className="relative block w-full appearance-none rounded-none rounded-b-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                              placeholder="referral code"
                             />
                           </div>
+                        </div>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <input
                               id="remember-me"
                               name="remember-me"
+                              required
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
@@ -178,7 +179,7 @@ const Register = () => {
                               htmlFor="remember-me"
                               className="ml-2 block text-sm text-gray-900"
                             >
-                              Accept Terms & Conditions
+                              <a href="https://docs.google.com/document/d/e/2PACX-1vScY6ySMIlcidLPYsALSF4GJUzurJsdaUEyPbcVNcH4gAA6LuE7XMVklec2dA1m8MnMVs7cxlTydXNP/pub?embedded=true" target="_blank">Accept Terms & Conditions</a>
                             </label>
                           </div>
                         </div>
