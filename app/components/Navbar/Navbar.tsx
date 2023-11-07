@@ -105,7 +105,7 @@ const Navbar = () => {
 
                         {/* REGISTER DIALOG */}
 
-                        <Registerdialog />
+                        <Registerdialog buttonText='Request Callback' />
 
 
                         {/* DRAWER FOR MOBILE VIEW */}

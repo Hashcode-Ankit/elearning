@@ -1,9 +1,11 @@
+"use client"; // This is a client component 👈🏽
+
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import axios from "axios";
 
-const Register = () => {
+const Register = (props) => {
   let [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
@@ -59,7 +61,7 @@ const Register = () => {
             className="text-Blueviolet text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out rounded-full bg-semiblueviolet hover:text-white hover:bg-Blueviolet"
             onClick={openModal}
           >
-            Request Callback
+            {props.buttonText}
           </button>
         </div>
       </div>
@@ -102,7 +104,7 @@ const Register = () => {
                           alt="Saral Group"
                         />
                         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                          Take your first step
+                          Redeem your first free career counselling
                         </h2>
                       </div>
                         <input
