@@ -15,7 +15,7 @@ const postData: DataType[] = [
     {
         profession: 'Senior Software Engineer',
         name: 'Kanish',
-        imgSrc: '/assets/mentor/kanish.png',
+        imgSrc: '/assets/mentor/user3.png',
     },
     {
         profession: 'Software Engineer',
