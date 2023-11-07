@@ -13,17 +13,17 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Founder Saral Tech, Senior Software Engineer',
+        profession: 'Founder Saral Tech | DevOps & NLP Expert',
         name: 'Kanish',
         imgSrc: '/assets/mentor/kanishCircular.png',
     },
     {
-        profession: 'Founder FreelanceHourly, Software Engineer',
+        profession: 'Founder FreelanceHourly | Software Expert',
         name: 'Ankit',
         imgSrc: '/assets/mentor/ankit.png',
     },
     {
-        profession: 'Founder Jamrio, Data Engineer',
+        profession: 'Founder Jamrio | Marketing Expert',
         name: 'Adhiraj',
         imgSrc: '/assets/mentor/jamiloBG.png',
     },
