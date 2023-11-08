@@ -39,7 +39,10 @@ const Data = () => {
             <div className="mt-4"></div>
             <br />
             <br />
-            <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium text-lg my-8 py-8 px-7 rounded">
+            <button
+                className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium text-lg my-8 py-8 px-7 rounded"
+                onClick={() => window.location.reload()}
+            >
               Admission Open!
             </button>
           </div>
