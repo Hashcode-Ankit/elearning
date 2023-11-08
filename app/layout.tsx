@@ -15,6 +15,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description"
+              content="Saral School - Empowering individuals with technical skills, industry knowledge, and confidence to excel in their careers. Join our comprehensive training programs to prepare for the job market and become independent."/>
+        <meta name="keywords"
+              content="Saral School, SarelTech, technical skills, industry knowledge, training programs, job market, independent, technology, simplified"/>
+        <meta name="author" content="SarelTech"/>
+        <meta property="og:title" content="Saral School - Empowering Individuals for Career Success"/>
+        <meta property="og:description"
+              content="Prepare for the job market and become independent with Saral School. Join our comprehensive training programs to acquire technical skills, industry knowledge, and confidence."/>
+        <meta property="og:image" content="your-og-image-url.jpg"/>
+        <meta property="og:url" content="https://www.yourwebsite.com/saralschool"/>
+        <title>Saral School</title>
+      </head>
       <body>
         <Navbar />
         {children}
