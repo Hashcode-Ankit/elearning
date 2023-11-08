@@ -56,20 +56,22 @@ const Navbar = () => {
 
                             {/* LOGO */}
 
-                            <div className="flex flex-shrink-0 items-center"  style={{ width: '40%', height: '100%' }}>
-                                <img
-                                    className="block h-full w-full lg:hidden"
-                                    width={100}
-                                    src={'/assets/logo/logo.png'}
-                                    alt="dsign-logo"
-                                />
-                                <img
-                                    className="hidden h-full w-full lg:block"
-                                    width={100}
-                                    src={'/assets/logo/logo.png'}
-                                    alt="dsign-logo"
-                                />
-                            </div>
+                            <Link href="/#/">
+                                <div className="flex flex-shrink-0 items-center"  style={{ width: '40%', height: '100%' }}>
+                                    <img
+                                        className="block h-full w-full lg:hidden"
+                                        width={100}
+                                        src={'/assets/logo/logo.png'}
+                                        alt="dsign-logo"
+                                    />
+                                    <img
+                                        className="hidden h-full w-full lg:block"
+                                        width={100}
+                                        src={'/assets/logo/logo.png'}
+                                        alt="dsign-logo"
+                                    />
+                                </div>
+                            </Link>
 
                             {/* LINKS */}
 
@@ -102,8 +104,9 @@ const Navbar = () => {
 
 
                         {/* REGISTER DIALOG */}
-
-                        <Registerdialog buttonText='Request Callback' />
+                        <div className="hidden lg:block">
+                            <Registerdialog buttonText='Request Callback' />
+                        </div>
 
 
                         {/* DRAWER FOR MOBILE VIEW */}
