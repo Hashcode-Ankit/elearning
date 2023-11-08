@@ -127,7 +127,7 @@ export default class MultipleItems extends Component {
 
                     <div className="sm:flex justify-between items-center">
                         <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Popular courses.</h3>
-                        <Link href="" onClick={() => window.location.reload()} target="__blank" className="text-Blueviolet text-lg font-medium space-links">Explore more courses&nbsp;&gt;&nbsp;</Link>
+                        <Link href="" onClick={() => window.location.reload()} target="__blank" className="text-Blueviolet text-lg font-medium space-links">Explore courses&nbsp;&gt;&nbsp;</Link>
                     </div>
 
 
