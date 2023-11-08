@@ -12,7 +12,7 @@ export default class MultipleItems extends Component {
                     <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Explore our <br /> Career Restart Programs.</h2>
                 </div>
 
-                <div className="flex justify-center items-center pt-16 sm:static sm:inset-auto">
+                <div className="flex justify-center items-center pt-32 sm:static sm:inset-auto">
                     <Link target="_blank" href="https://drive.google.com/file/d/1x50WR-WVwYPmwbJU3QMG3uH_L2W8X6JM/view">
                         <button
                           className="text-Blueviolet text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out rounded-full bg-semiblueviolet hover:text-white hover:bg-Blueviolet"
@@ -22,7 +22,7 @@ export default class MultipleItems extends Component {
                     </Link>
                 </div>
 
-                <div className="flex justify-end items-end pt-24 pr-20 sm:static sm:inset-auto">
+                <div className="flex justify-end items-end pt-20 pr-20 sm:static sm:inset-auto">
                     <Link href="" onClick={() => window.location.reload()} className="text-Blueviolet text-lg font-medium space-links">
                           ** get free career counselling before enrollment
                     </Link>
