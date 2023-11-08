@@ -26,8 +26,8 @@ export default function RootLayout({
         <meta property="og:title" content="Saral School - Empowering Individuals for Career Success"/>
         <meta property="og:description"
               content="Prepare for the job market and become independent with Saral School. Join our comprehensive training programs to acquire technical skills, industry knowledge, and confidence."/>
-        <meta property="og:image" content="your-og-image-url.jpg"/>
-        <meta property="og:url" content="https://www.yourwebsite.com/saralschool"/>
+        <meta property="og:image" content="https://edu.saralgroups.com/_next/image?url=%2Fassets%2Fbanner%2Fmahila.png&w=2048&q=75"/>
+        <meta property="og:url" content="https://edu.saralgroups.com/"/>
         <title>Saral School</title>
       </head>
       <body>
