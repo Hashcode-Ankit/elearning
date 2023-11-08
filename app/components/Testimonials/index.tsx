@@ -15,40 +15,46 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'I have found that making even a small weekly goal and sticking to it has helped. By completing the MERN stack course, i have learned to develop Web Application with proper use of all mern technology, My mentor Mr. Ankit sir,  help me a lot at every steps  when i get stucked. Thanks a lot for providing an amazing course.',
-        imgSrc: '/assets/testimonial/user.svg',
+        name: "Adarsh",
+        profession: 'Full Stack Engineer',
+        comment: 'I have found that making even a small weekly goal and sticking to it has helped. Thanks a lot for providing an amazing course.',
+        imgSrc: '/assets/testimonial/user1.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'This course is really helpful for me, I am able to learn new things and now I found a new career path. Thank you for the entire Team.',
-        imgSrc: '/assets/mentor/user2.png',
+        name: "Akash",
+        profession: 'DevOps Engineer',
+        comment: 'Very friendly instructor. Doubts are solved instantly.',
+        imgSrc: '/assets/testimonial/user2.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
+        name: "Yash",
+        profession: 'NLP Engineer',
         comment: 'Awesome course, started from scratch. Provide total hand holding and cleared all doubts ',
-        imgSrc: '/assets/mentor/user3.png',
+        imgSrc: '/assets/testimonial/user3.png',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
+        name: "Rohan",
+        profession: 'Software Developer',
         comment: 'It was a great experience learning from Ankit sir , who has a vast knowledge about development. If you work consistently you can too become a great developer.',
-        imgSrc: '/assets/mentor/user1.png',
+        imgSrc: '/assets/testimonial/user4.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
+        name: "Vishal",
+        profession: 'Data Analyst',
         comment: 'Nice way to learn Code from Scratch, you should go for it.',
-        imgSrc: '/assets/mentor/user2.png',
+        imgSrc: '/assets/testimonial/user5.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
+        name: "Sagar",
+        profession: 'Product Engineer',
         comment: 'I am extremely happy that I took this course. I\'m familiar with HTML CSS JavaScript but I want to excel myself as a Full stack developer so enrolled in this course. Great teaching and understood each and every topic. Thank you for this wonderful course and waiting for Data Science course if possible.',
-        imgSrc: '/assets/mentor/user3.png',
+        imgSrc: '/assets/testimonial/user6.png',
+    },
+    {
+        name: "Manisha",
+        profession: 'Human Resource',
+        comment: 'This course is really helpful for me, I am able to learn new things and now I found a new career path. Thank you for the entire Team.',
+        imgSrc: '/assets/testimonial/user7.png',
     },
 ]
 
@@ -109,7 +115,9 @@ export default class MultipleItems extends Component {
                             <div key={i}>
                                 <div className={`bg-white m-4 p-5 my-20 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
                                     <div className="absolute top-[-45px]">
-                                        <Image src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block" />
+                                        <Image
+                                            src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block"
+                                            style={{width: 80, height: 80, borderRadius: 100/ 2}}  />
                                     </div>
                                     <h4 className='text-base font-normal text-darkgray my-4'>{items.comment}</h4>
                                     <hr style={{ color: "#D7D5D5" }} />
