@@ -21,8 +21,8 @@ export default function RootLayout({
         <meta name="description"
               content="Saral School - Empowering individuals with technical skills, industry knowledge, and confidence to excel in their careers. Join our comprehensive training programs to prepare for the job market and become independent."/>
         <meta name="keywords"
-              content="Saral School, SarelTech, technical skills, industry knowledge, training programs, job market, independent, technology, simplified"/>
-        <meta name="author" content="SarelTech"/>
+              content="Saral School, SaralTech, technical skills, industry knowledge, training programs, job market, independent, technology, simplified"/>
+        <meta name="author" content="SaralTech"/>
         <meta property="og:title" content="Saral School - Empowering Individuals for Career Success"/>
         <meta property="og:description"
               content="Prepare for the job market and become independent with Saral School. Join our comprehensive training programs to acquire technical skills, industry knowledge, and confidence."/>
