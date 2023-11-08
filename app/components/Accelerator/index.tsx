@@ -23,7 +23,7 @@ export default class MultipleItems extends Component {
                 </div>
 
                 <div className="flex justify-end items-end pt-24 pr-20 sm:static sm:inset-auto">
-                    <Link href="" onClick={() => window.location.reload()} target="__blank" className="text-Blueviolet text-lg font-medium space-links">
+                    <Link href="" onClick={() => window.location.reload()} className="text-Blueviolet text-lg font-medium space-links">
                           ** get free career counselling before enrollment
                     </Link>
                 </div>

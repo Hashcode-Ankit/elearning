@@ -1,7 +1,7 @@
 "use client"; // This is a client component 👈🏽
 
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import {Fragment, useRef, useState} from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import axios from "axios";
 
@@ -11,6 +11,7 @@ type MyComponentProps = {
 
 const Register: React.FC<MyComponentProps> = (props) => {
   let [isOpen, setIsOpen] = useState(true);
+  let completeButtonRef = useRef(null);
 
   const closeModal = () => {
     setIsOpen(false);
@@ -70,7 +71,8 @@ const Register: React.FC<MyComponentProps> = (props) => {
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}
+      initialFocus={completeButtonRef}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -206,6 +208,7 @@ const Register: React.FC<MyComponentProps> = (props) => {
                           <button
                             type="submit"
                             onClick={sendToSlack}
+                             ref={completeButtonRef}
                             className="group relative flex w-full justify-center rounded-md border border-transparent bg-Blueviolet py-2 px-4 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                           >
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">

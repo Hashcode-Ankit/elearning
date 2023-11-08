@@ -120,7 +120,10 @@ export default class MultipleItems extends Component {
                                 <div className='m-3 py-14 md:my-10 text-center'>
                                     <div className="relative">
                                             <Link href={items.linkedin} target="_blank">
-                                        <Image src={items.imgSrc} alt="user-image" width={200} height={0} className="inline-block m-auto" />
+                                        <Image src={items.imgSrc} alt="user-image" width={200} height={0} className="inline-block m-auto" style={{
+                                            width: "auto",
+                                            height: "auto"
+                                        }} />
                                         <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">
                                                 <Image src={'/assets/mentor/linkedin.svg'} alt="linkedin-image" width={25} height={24} />
                                         </div>
