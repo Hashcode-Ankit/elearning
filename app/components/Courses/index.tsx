@@ -75,7 +75,7 @@ const postData: DataType[] = [
         name: "",
         imgSrc: '/assets/courses/pd.png',
         students: 150,
-        classes: 11,
+        classes: 12,
         price: 11999,
         rating: 4.8,
     },
@@ -128,6 +128,11 @@ export default class MultipleItems extends Component {
                     <div className="sm:flex justify-between items-center">
                         <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Popular courses.</h3>
                         <Link href="" onClick={() => window.location.reload()} target="__blank" className="text-Blueviolet text-lg font-medium space-links">Explore courses&nbsp;&gt;&nbsp;</Link>
+                    </div>
+
+                    <div className='flex gap-2 mx-auto pt-5 lg:mx-0'>
+                        <Image src="/assets/banner/check.svg" alt="check-image" width={20} height={20} />
+                        <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Upto 20% off on first course program</h3>
                     </div>
 
 

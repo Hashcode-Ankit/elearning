@@ -130,6 +130,10 @@ export default class MultipleItems extends Component {
                         <Link href="" onClick={() => window.location.reload()} target="__blank" className="text-Blueviolet text-lg font-medium space-links">Explore sessions&nbsp;&gt;&nbsp;</Link>
                     </div>
 
+                    <div className='flex gap-2 mx-auto pt-5 lg:mx-0'>
+                        <Image src="/assets/banner/check.svg" alt="check-image" width={20} height={20} />
+                        <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Upto 50% off on first master session</h3>
+                    </div>
 
                     <Slider {...settings}>
                         {postData.map((items, i) => (
