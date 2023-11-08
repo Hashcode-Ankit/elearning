@@ -184,6 +184,7 @@ export default class MultipleItems extends Component {
                             </div>
                         ))}
                     </Slider>
+                    <hr />
                 </div>
             </div>
 
