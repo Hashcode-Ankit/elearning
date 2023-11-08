@@ -22,7 +22,7 @@ const Data = () => {
     <div className="rounded-md max-w-sm w-full mx-auto">
       <div className="flex-1 space-y-4 py-1">
         <div className="sm:block">
-          <div className="space-y-1 px-5 pt-2 pb-3">
+          <div className="space-y-1 px-5 pt-4 pb-3">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -37,8 +37,10 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium my-2 py-2 px-4 rounded">
-              Sign up
+            <br />
+            <br />
+            <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium text-lg my-8 py-8 px-7 rounded">
+              Admission Open!
             </button>
           </div>
         </div>
