@@ -13,7 +13,7 @@ export default class MultipleItems extends Component {
                 </div>
 
                 <div className="flex justify-center items-center py-20 sm:static sm:inset-auto">
-                    <Link href="https://drive.google.com/file/d/1x50WR-WVwYPmwbJU3QMG3uH_L2W8X6JM/view">
+                    <Link target="_blank" href="https://drive.google.com/file/d/1x50WR-WVwYPmwbJU3QMG3uH_L2W8X6JM/view">
                         <button
                           className="text-Blueviolet text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out rounded-full bg-semiblueviolet hover:text-white hover:bg-Blueviolet"
                         >
