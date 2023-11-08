@@ -9,7 +9,7 @@ export default class MultipleItems extends Component {
         return (
             <div className="py-20 sm:py-24 items-center" id="accelerator">
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
-                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Explore our <br /> Career Restart Program.</h2>
+                    <h2 className="lh-82 text-midnightblue text-4xl md:text-55xl text-center md:text-start font-semibold">Explore our <br /> Career Restart Programs.</h2>
                 </div>
 
                 <div className="flex justify-center items-center py-20 sm:static sm:inset-auto">
