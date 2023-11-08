@@ -17,37 +17,37 @@ const postData: DataType[] = [
     {
         name: "Robert Fox",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'I have found that making even a small weekly goal and sticking to it has helped. By completing the MERN stack course, i have learned to develop Web Application with proper use of all mern technology, My mentor Mr. Ankit sir,  help me a lot at every steps  when i get stucked. Thanks a lot for providing an amazing course.',
         imgSrc: '/assets/testimonial/user.svg',
     },
     {
         name: "Leslie Alexander",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'This course is really helpful for me, I am able to learn new things and now I found a new career path. Thank you for the entire Team.',
         imgSrc: '/assets/mentor/user2.png',
     },
     {
         name: "Cody Fisher",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'Awesome course, started from scratch. Provide total hand holding and cleared all doubts ',
         imgSrc: '/assets/mentor/user3.png',
     },
     {
         name: "Robert Fox",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'It was a great experience learning from Ankit sir , who has a vast knowledge about development. If you work consistently you can too become a great developer.',
         imgSrc: '/assets/mentor/user1.png',
     },
     {
         name: "Leslie Alexander",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'Nice way to learn Code from Scratch, you should go for it.',
         imgSrc: '/assets/mentor/user2.png',
     },
     {
         name: "Cody Fisher",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'I am extremely happy that I took this course. I\'m familiar with HTML CSS JavaScript but I want to excel myself as a Full stack developer so enrolled in this course. Great teaching and understood each and every topic. Thank you for this wonderful course and waiting for Data Science course if possible.',
         imgSrc: '/assets/mentor/user3.png',
     },
 ]
