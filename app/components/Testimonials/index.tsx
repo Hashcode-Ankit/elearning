@@ -23,31 +23,31 @@ const postData: DataType[] = [
     {
         name: "Akash",
         profession: 'DevOps Engineer',
-        comment: 'Very friendly instructor. Doubts are solved instantly.',
+        comment: 'Very friendly instructor. Doubts are solved instantly. The in-depth content and hands-on projects have taken my web development skills to a whole new level.',
         imgSrc: '/assets/testimonial/user2.png',
     },
     {
         name: "Yash",
         profession: 'NLP Engineer',
-        comment: 'Awesome course, started from scratch. Provide total hand holding and cleared all doubts ',
+        comment: 'Awesome course, started from scratch. Provide total hand holding and cleared all doubts. Great teaching and understood each and every topic.',
         imgSrc: '/assets/testimonial/user3.png',
     },
     {
         name: "Rohan",
         profession: 'Software Developer',
-        comment: 'It was a great experience learning from Ankit sir , who has a vast knowledge about development. If you work consistently you can too become a great developer.',
+        comment: 'It was a great experience learning from Ankit sir, who has a vast knowledge about development. If you work consistently you can too become a great developer.',
         imgSrc: '/assets/testimonial/user4.png',
     },
     {
         name: "Vishal",
         profession: 'Data Analyst',
-        comment: 'Nice way to learn Code from Scratch, you should go for it.',
+        comment: 'Nice way to learn things from Scratch, you should go for it. It made complex concepts so much more accessible. Thank you for this wonderful course and waiting for Advance Data Science course if possible.',
         imgSrc: '/assets/testimonial/user5.png',
     },
     {
         name: "Sagar",
         profession: 'Product Engineer',
-        comment: 'I am extremely happy that I took this course. I\'m familiar with HTML CSS JavaScript but I want to excel myself as a Full stack developer so enrolled in this course. Great teaching and understood each and every topic. Thank you for this wonderful course and waiting for Data Science course if possible.',
+        comment: 'I am extremely happy that I took this course. I\'m familiar with HTML CSS JavaScript but I want to excel myself as a Full stack developer so enrolled in this course.',
         imgSrc: '/assets/testimonial/user6.png',
     },
     {
@@ -70,7 +70,7 @@ export default class MultipleItems extends Component {
             infinite: true,
             slidesToShow: 3,
             // centerMode: true,
-            slidesToScroll: 2,
+            slidesToScroll: 3,
             arrows: false,
             autoplay: false,
             speed: 500,
@@ -117,7 +117,7 @@ export default class MultipleItems extends Component {
                                     <div className="absolute top-[-45px]">
                                         <Image
                                             src={items.imgSrc} alt={items.imgSrc} width={100} height={100} className="inline-block"
-                                            style={{width: 80, height: 80, borderRadius: 100/ 2}}  />
+                                            style={{width: 60, height: 60, borderRadius: 60/ 2}}  />
                                     </div>
                                     <h4 className='text-base font-normal text-darkgray my-4'>{items.comment}</h4>
                                     <hr style={{ color: "#D7D5D5" }} />
