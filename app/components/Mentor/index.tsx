@@ -121,7 +121,7 @@ export default class MultipleItems extends Component {
                                     <div className="relative">
                                             <Link href={items.linkedin} target="_blank">
                                         <Image src={items.imgSrc} alt="user-image" width={200} height={0} className="inline-block m-auto" style={{
-                                            width: "auto",
+                                            width: "200",
                                             height: "auto"
                                         }} />
                                         <div className="absolute right-[84px] bottom-[102px] bg-white rounded-full p-4">

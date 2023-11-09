@@ -191,6 +191,8 @@ export default class MultipleItems extends Component {
                         ))}
                     </Slider>
                 </div>
+
+                <hr style={{ color: "#C4C4C4" }} />
             </div>
 
         );
