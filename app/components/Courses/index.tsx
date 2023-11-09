@@ -88,7 +88,7 @@ export default class MultipleItems extends Component {
 
     render() {
         const settings = {
-            dots: false,
+            dots: true,
             infinite: true,
             slidesToShow: 3,
             // centerMode: true,
@@ -105,7 +105,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: true
                     }
                 },
                 {
@@ -114,7 +114,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: true
                     }
                 }
             ]
@@ -123,7 +123,7 @@ export default class MultipleItems extends Component {
 
         return (
             <div id="courses">
-                <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
+                <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8'>
 
                     <div className="sm:flex justify-between items-center">
                         <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Popular courses.</h3>
@@ -191,6 +191,7 @@ export default class MultipleItems extends Component {
                         ))}
                     </Slider>
                 </div>
+                <br />
 
                 <hr style={{ color: "#C4C4C4" }} />
             </div>
