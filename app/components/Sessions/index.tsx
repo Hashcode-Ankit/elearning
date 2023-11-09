@@ -122,7 +122,7 @@ export default class MultipleItems extends Component {
 
 
         return (
-            <div id="courses">
+            <div id="sessions">
                 <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
 
                     <div className="sm:flex justify-between items-center">
