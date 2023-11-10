@@ -21,7 +21,7 @@ const Banner = () => {
                             <Registerdialog buttonText='Consult our Career Experts' />
                         </div>
 
-                        <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-10 lg:pt-5'>Build skills with our courses and mentor from world-class companies.</h3>
+                        <h3 className='text-charcoal text-lg font-normal text-center lg:text-start opacity-75 pt-10 lg:pt-5'>Build skills with our courses and mentor from world-class companies. We are on mission to prepare every individuals for the job market, and become independent.</h3>
 
                         {/*<div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">*/}
                         {/*    <input type="Email address" name="q" className="py-6 lg:py-8 text-lg w-full text-black opacity-75 rounded-full pl-8 focus:outline-none focus:text-black" placeholder="search courses..." autoComplete="off" />*/}
