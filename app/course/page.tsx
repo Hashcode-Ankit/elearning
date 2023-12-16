@@ -27,7 +27,6 @@ export default function HeroSection() {
     padding: '12px 24px',
     fontSize: '16px',
     fontWeight: 'bold',
-    textAlign: 'center',
     textDecoration: 'none',
     color: '#fff',
     backgroundColor: '#3498db',
