@@ -9,12 +9,10 @@ export default function HeroSection() {
   const [registered, setRegistered] = useState(0);
   const [completed, setCompleted] = useState(0);
   const [alumnis, setAlumnis] = useState(0);
-  const [isCourseOutlineOpen, setCourseOutlineOpen] = useState(false);
   const controls = useAnimation();
+  const [openModules, setOpenModules] = useState<number[]>([]);
 
-  const [openModules, setOpenModules] = useState([]);
-
-  const toggleModule = (moduleNumber) => {
+  const toggleModule = (moduleNumber:number) => {
     if (openModules.includes(moduleNumber)) {
       // If the module is already open, close it
       setOpenModules(openModules.filter((module) => module !== moduleNumber));
@@ -114,9 +112,6 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    controls.start(isCourseOutlineOpen ? "open" : "closed");
-  }, [isCourseOutlineOpen, controls]);
   return (
     <div className="bg-gray-900">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

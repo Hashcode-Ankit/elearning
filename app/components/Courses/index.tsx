@@ -25,10 +25,10 @@ const postData: DataType[] = [
         heading2: 'In Residence',
         name: "",
         imgSrc: '/assets/courses/entrepreneur.jpeg',
-        students: 150,
+        students: 50,
         classes: 24,
-        price: 24999,
-        rating: 4.8,
+        price: 15999,
+        rating: 4.9,
         href:'/course'
     },
     {
