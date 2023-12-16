@@ -16,9 +16,21 @@ interface DataType {
     classes: number;
     price: number;
     rating: number;
+    href: string;
 }
 
 const postData: DataType[] = [
+    {
+        heading: 'Entrepreneur',
+        heading2: 'In Residence',
+        name: "",
+        imgSrc: '/assets/courses/entrepreneur.jpeg',
+        students: 150,
+        classes: 24,
+        price: 24999,
+        rating: 4.8,
+        href:'/course'
+    },
     {
         heading: 'ChatGPT',
         heading2: 'and Python Training',
@@ -28,6 +40,7 @@ const postData: DataType[] = [
         classes: 24,
         price: 24999,
         rating: 4.8,
+        href:'#'
     },
     {
         heading: 'Basic + Advance',
@@ -38,6 +51,7 @@ const postData: DataType[] = [
         classes: 28,
         price: 19999,
         rating: 4.7,
+        href:'#'
     },
     {
         heading: 'End To End',
@@ -48,6 +62,7 @@ const postData: DataType[] = [
         classes: 26,
         price: 15999,
         rating: 4.2,
+        href:'#'
     },
     {
         heading: 'Data Analytics',
@@ -58,6 +73,7 @@ const postData: DataType[] = [
         classes: 22,
         price: 19999,
         rating: 4.4,
+        href:'#'
     },
     {
         heading: 'Basic NLP',
@@ -68,6 +84,7 @@ const postData: DataType[] = [
         classes: 22,
         price: 21999,
         rating: 4.1,
+        href:'#'
     },
     {
         heading: 'Personality ',
@@ -78,6 +95,7 @@ const postData: DataType[] = [
         classes: 12,
         price: 11999,
         rating: 4.8,
+        href:'#'
     },
 ]
 
@@ -139,7 +157,7 @@ export default class MultipleItems extends Component {
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
-
+                                <a href={items.href}>
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
                                     <div className="relative rounded-3xl">
                                         <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="m-auto clipPath" />
@@ -187,6 +205,7 @@ export default class MultipleItems extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         ))}
                     </Slider>
