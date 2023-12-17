@@ -16,69 +16,21 @@ interface DataType {
     classes: number;
     price: number;
     rating: number;
+    href: string;
 }
 
-const postData: DataType[] = [
+const liveCourse: DataType[] = [
     {
-        heading: 'Basic + Advance',
-        heading2: 'Python Programming',
+        heading: 'Entrepreneur',
+        heading2: 'In Residence',
         name: "",
-        imgSrc: '/assets/courses/python.png',
-        students: 130,
-        classes: 2,
-        price: 1999,
-        rating: 4.7,
-    },
-    {
-        heading: 'ChatGPT',
-        heading2: 'and Python Training',
-        name: "",
-        imgSrc: '/assets/courses/chat.jpeg',
-        students: 150,
-        classes: 2,
-        price: 2499,
-        rating: 4.8,
-    },
-    {
-        heading: 'End To End',
-        heading2: 'MERN Stack',
-        name: "",
-        imgSrc: '/assets/courses/mern.jpeg',
-        students: 120,
-        classes: 2,
-        price: 1599,
-        rating: 4.2,
-    },
-    {
-        heading: 'Data Analytics',
-        heading2: '',
-        name: "",
-        imgSrc: '/assets/courses/danalytics.webp',
-        students: 150,
-        classes: 2,
-        price: 1999,
-        rating: 4.4,
-    },
-    {
-        heading: 'Basic NLP',
-        heading2: '+ LLM Course',
-        name: "Vector Store Databases",
-        imgSrc: '/assets/courses/nlp.png',
-        students: 150,
-        classes: 2,
-        price: 2199,
-        rating: 4.1,
-    },
-    {
-        heading: 'Personality ',
-        heading2: 'Development',
-        name: "",
-        imgSrc: '/assets/courses/pd.png',
-        students: 150,
-        classes: 2,
-        price: 1199,
-        rating: 4.8,
-    },
+        imgSrc: '/assets/courses/entrepreneur.jpeg',
+        students: 50,
+        classes: 24,
+        price: 15999,
+        rating: 4.9,
+        href:'/eir'
+    }
 ]
 
 // CAROUSEL SETTINGS
@@ -89,67 +41,48 @@ export default class MultipleItems extends Component {
     render() {
         const settings = {
             dots: true,
-            infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 1,
             // centerMode: true,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             arrows: false,
             autoplay: true,
             speed: 1000,
-            autoplaySpeed: 3000,
-            cssEase: "linear",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                }
-            ]
+            autoplaySpeed: 2000,
         };
 
 
+
         return (
-            <div id="sessions">
+            <div id="live">
                 <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8'>
 
                     <div className="sm:flex justify-between items-center">
-                        <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Master Sessions.</h3>
+                        <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Live courses.</h3>
+                        <Link href="" onClick={() => window.location.reload()} className="text-Blueviolet text-lg font-medium space-links">Live courses&nbsp;&gt;&nbsp;</Link>
                     </div>
-                <br />
 
                     <div className='flex gap-2 mx-auto pt-5 lg:mx-0'>
                         <Image src="/assets/banner/check.svg" alt="check-image" width={20} height={20} />
-                        <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Upto 50% off on first master session</h3>
+                        <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Upto 20% off on first course program</h3>
                     </div>
 
-                    <Slider {...settings}>
-                        {postData.map((items, i) => (
-                            <div key={i}>
 
+                    <Slider {...settings}>
+                        {liveCourse.map((items, i) => (
+                            <div key={i}>
+                                <a href={items.href}>
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
                                     <div className="relative rounded-3xl">
                                         <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="m-auto clipPath" />
                                         <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-6">
-                                            <h3 className="text-white uppercase text-center text-sm font-medium">best <br /> seller</h3>
+                                            <h3 className="text-white uppercase text-center text-sm font-medium">Register <br /> Now</h3>
                                         </div>
                                     </div>
 
                                     <div className="px-3">
                                         <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>
                                         <h4 className='text-2xl font-bold pt-1 text-black'>{items.heading2}</h4>
+                                        <h5 className='text-l pt-1 text-black'>15 students per batch</h5>
 
                                         <div>
                                             <h3 className='text-base font-normal pt-6 opacity-75'>{items.name}</h3>
@@ -185,12 +118,13 @@ export default class MultipleItems extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         ))}
                     </Slider>
-
                 </div>
                 <br />
+
                 <hr style={{ color: "#C4C4C4" }} />
             </div>
 

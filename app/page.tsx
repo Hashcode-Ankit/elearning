@@ -1,5 +1,6 @@
 import Banner from './components/Banner/index';
 import Companies from './components/Companies/Companies';
+import Live from './components/Live/index';
 import Courses from './components/Courses/index';
 import Sessions from './components/Sessions/index';
 import Accelerator from './components/Accelerator/index';
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Banner />
       <Companies />
+      <Live />
       <Courses />
       <Sessions />
       <Accelerator />

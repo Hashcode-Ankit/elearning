@@ -17,7 +17,7 @@ const postData: DataType[] = [
     {
         name: "Adarsh",
         profession: 'Full Stack Engineer',
-        comment: 'I have found that making even a small weekly goal and sticking to it has helped. Thanks a lot for providing an amazing course.',
+        comment: 'I have found that making even a small weekly goal and sticking to it has helped. Thanks a lot for providing an amazing eir.',
         imgSrc: '/assets/testimonial/user1.png',
     },
     {
@@ -29,7 +29,7 @@ const postData: DataType[] = [
     {
         name: "Yash",
         profession: 'NLP Engineer',
-        comment: 'Awesome course, started from scratch. Provide total hand holding and cleared all doubts. Great teaching and understood each and every topic.',
+        comment: 'Awesome eir, started from scratch. Provide total hand holding and cleared all doubts. Great teaching and understood each and every topic.',
         imgSrc: '/assets/testimonial/user3.png',
     },
     {
@@ -41,19 +41,19 @@ const postData: DataType[] = [
     {
         name: "Vishal",
         profession: 'Data Analyst',
-        comment: 'Nice way to learn things from Scratch, you should go for it. It made complex concepts so much more accessible. Thank you for this wonderful course and waiting for Advance Data Science course if possible.',
+        comment: 'Nice way to learn things from Scratch, you should go for it. It made complex concepts so much more accessible. Thank you for this wonderful eir and waiting for Advance Data Science eir if possible.',
         imgSrc: '/assets/testimonial/user5.png',
     },
     {
         name: "Sagar",
         profession: 'Product Engineer',
-        comment: 'I am extremely happy that I took this course. I\'m familiar with HTML CSS JavaScript but I want to excel myself as a Full stack developer so enrolled in this course.',
+        comment: 'I am extremely happy that I took this eir. I\'m familiar with HTML CSS JavaScript but I want to excel myself as a Full stack developer so enrolled in this eir.',
         imgSrc: '/assets/testimonial/user6.png',
     },
     {
         name: "Manisha",
         profession: 'Human Resource',
-        comment: 'This course is really helpful for me, I am able to learn new things and now I found a new career path. Thank you for the entire Team.',
+        comment: 'This eir is really helpful for me, I am able to learn new things and now I found a new career path. Thank you for the entire Team.',
         imgSrc: '/assets/testimonial/user7.png',
     },
 ]
