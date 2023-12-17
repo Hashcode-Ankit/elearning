@@ -162,7 +162,7 @@ export default function HeroSection() {
             <div className="flex justify-center items-center">
               <div className="space-y-2 text-center">
                 <dt className="text-lg leading-6 font-medium text-black">
-                  Alumnis
+                  Alumnus
                 </dt>
                 <dd className="mt-1 text-3xl font-extrabold text-black">
                   {alumnis}+
