@@ -46,7 +46,7 @@ const Register: React.FC<MyComponentProps> = (props) => {
 
     // Compose the message payload
     const messagePayload = {
-      "text": `Saral School  \nRequest for Callback \n${JSON.stringify(formData)}`,
+      "text": `Saral School  \nRequest for ${props.buttonText} (${window.location.pathname}) : \n${JSON.stringify(formData)}`,
     };
 
 

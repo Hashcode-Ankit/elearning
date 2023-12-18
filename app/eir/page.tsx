@@ -5,6 +5,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { text } from "stream/consumers";
+
+
 export default function HeroSection() {
   const [registered, setRegistered] = useState(0);
   const [completed, setCompleted] = useState(0);
@@ -21,6 +23,7 @@ export default function HeroSection() {
       setOpenModules([...openModules, moduleNumber]);
     }
   };
+
   const buttonStyles = {
     
     display: 'inline-block',
@@ -42,6 +45,7 @@ export default function HeroSection() {
     // Add your logic for handling the "Buy Now" action
     console.log('Buy Now clicked!');
   };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -51,6 +55,7 @@ export default function HeroSection() {
     autoplay: true,        // Enable autoplay
     autoplaySpeed: 1000, 
   };
+
   const modules = [
     {
       title: 'How to find the lead?',
@@ -66,6 +71,7 @@ export default function HeroSection() {
       items: ['0-1 Journey Type Companies (Non-Funded/Pre-Seed Funded)', '1-10 Journey Type Companies (Seed Funded/Pre-Series Funded)', '10-100 Journey Type Companies (Series Funded/Enterprise Companies)','Miscellaneous'],
     }
   ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setRegistered((registered) => {
