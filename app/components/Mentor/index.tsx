@@ -15,7 +15,7 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Founder Saral Tech | DevOps & NLP Expert',
+        profession: 'IIT Rorrkee | Founder Saral Tech',
         name: 'Kanish',
         imgSrc: '/assets/mentor/kanishCircular.png',
         linkedin: 'https://www.linkedin.com/in/k4ni5h/',
