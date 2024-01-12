@@ -122,7 +122,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold text-black sm:text-4xl" style={{ marginBottom:'30px' }}>
-            Entrepreneur-in-Residence Training Programme
+            Entrepreneur-in-Residence Training Programme (Upto 100% Scholarship Available)
           </h2>
           <h3 className="text-1xl text-gray sm:text-2xl" style={{ marginBottom:'30px' }}>Journey to build business from 0$</h3>
           <Slider {...settings}>
@@ -211,8 +211,8 @@ export default function HeroSection() {
               </motion.div>
             ))}
           </div>
-          <a href="https://pmny.in/7IMMYknbRkAN" target='__blank' style={buttonStyles} onClick={handleButtonClick}>
-            Buy Now
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScgecwJ2iIjIZnejUCx0zZiu-fvLBZTUEPngTwndorZfjy-Kw/viewform?usp=sf_link" target='__blank' style={buttonStyles} onClick={handleButtonClick}>
+            Apply For Scholarship
           </a>
         </div>
       </div>
