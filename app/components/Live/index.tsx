@@ -63,7 +63,7 @@ export default class MultipleItems extends Component {
 
                     <div className='flex gap-2 mx-auto pt-5 lg:mx-0'>
                         <Image src="/assets/banner/check.svg" alt="check-image" width={20} height={20} />
-                        <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Upto 20% off on first course program</h3>
+                        <h3 className='text-kellygreen text-sm font-semibold text-center lg:text-start'>Upto 100% scholarship available</h3>
                     </div>
 
 
