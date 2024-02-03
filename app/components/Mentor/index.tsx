@@ -15,19 +15,19 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'IIT Rorrkee | Founder Saral Tech',
+        profession: 'IIT Rorrkee | Founder, Saral Tech',
         name: 'Kanish',
         imgSrc: '/assets/mentor/kanishCircular.png',
         linkedin: 'https://www.linkedin.com/in/k4ni5h/',
     },
     {
-        profession: 'Founder FreelanceHourly | Software Expert',
+        profession: 'Founding Engineer, Datazip | Data Expert',
         name: 'Ankit',
         imgSrc: '/assets/mentor/ankit.png',
         linkedin: 'https://www.linkedin.com/in/hashcode-ankit/',
     },
     {
-        profession: 'Founder Jamrio | Marketing Expert',
+        profession: 'Founder, Jamrio | Marketing Expert',
         name: 'Adhiraj',
         imgSrc: '/assets/mentor/jamiloBG.png',
         linkedin: 'https://www.linkedin.com/in/aayxkay/',
